@@ -14,15 +14,7 @@ struct SplashView: View {
     var body: some View {
 		switch state {
 		case .loading:
-			ZStack {
-				Image("logo")
-					.resizable()
-					.scaledToFit()
-					.frame(maxWidth: .infinity, maxHeight: .infinity)
-					.padding(20)
-					.background(Color.white)
-					.ignoresSafeArea()
-			}
+			loadingView()
 		case .goToSignInScreen:
 			Text("carregar tela de login")
 		case .goToHomeScreen:
@@ -31,6 +23,20 @@ struct SplashView: View {
 			Text("mostrar erro:\n \(msg)")
 		}
     }
+}
+
+extension SplashView {
+	func loadingView() -> some View {
+		ZStack {
+			Image("logo")
+				.resizable()
+				.scaledToFit()
+				.frame(maxWidth: .infinity, maxHeight: .infinity)
+				.padding(20)
+				.background(Color.white)
+				.ignoresSafeArea()
+		}
+	}
 }
 
 struct SplashView_Previews: PreviewProvider {
