@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C57E913D27B5E92C00C60C1F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E913C27B5E92C00C60C1F /* SplashViewModel.swift */; };
 		C5DB490027AC3E2400C68EB4 /* HabitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DB48FF27AC3E2400C68EB4 /* HabitApp.swift */; };
 		C5DB490427AC3E2600C68EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB490327AC3E2600C68EB4 /* Assets.xcassets */; };
 		C5DB490727AC3E2600C68EB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5DB490627AC3E2600C68EB4 /* Preview Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C57E913C27B5E92C00C60C1F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		C5DB48FC27AC3E2400C68EB4 /* Habit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5DB48FF27AC3E2400C68EB4 /* HabitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitApp.swift; sourceTree = "<group>"; };
 		C5DB490327AC3E2600C68EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		C5DB491027AC40DD00C68EB4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C57E913C27B5E92C00C60C1F /* SplashViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				C5DB491427AC45BE00C68EB4 /* SplashUIState.swift in Sources */,
 				C5DB490027AC3E2400C68EB4 /* HabitApp.swift in Sources */,
 				C5DB491227AC439D00C68EB4 /* SplashView.swift in Sources */,
+				C57E913D27B5E92C00C60C1F /* SplashViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
