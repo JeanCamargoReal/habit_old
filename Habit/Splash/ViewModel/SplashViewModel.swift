@@ -8,12 +8,18 @@
 import SwiftUI
 
 class SplashViewModel: ObservableObject {
-	@Published var uiState: SplashUIState = .goToHomeScreen
+	@Published var uiState: SplashUIState = .loading
 		
 	func onAppear() {
-		// Simulação de busca de dados em um servidor
 		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-			self.uiState = .loading
+			self.uiState = .goToSignInScreen
 		}
+	}
+}
+// Simulação de busca de dados em um servidor
+
+extension SplashView {
+	func signInView() -> some View {
+		return SplashViewRouter.makeSignInView()
 	}
 }
