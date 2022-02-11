@@ -16,9 +16,9 @@ class SplashViewModel: ObservableObject {
 		}
 	}
 }
-// Simulação de busca de dados em um servidor
 
-extension SplashView {
+// Simulação de busca de dados em um servidor
+extension SplashViewModel {
 	func signInView() -> some View {
 		return SplashViewRouter.makeSignInView()
 	}
