@@ -11,7 +11,7 @@ struct SplashView: View {
 	@ObservedObject var viewModel: SplashViewModel
 	
 	var body: some View {
-		Group {
+		Group { 
 			switch viewModel.uiState {
 			case .loading:
 				loadingView()
