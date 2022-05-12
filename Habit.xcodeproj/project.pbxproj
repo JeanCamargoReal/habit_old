@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C50794F1282C3B24007DA808 /* SignInUIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50794F0282C3B24007DA808 /* SignInUIState.swift */; };
+		C50794F3282D3D10007DA808 /* SignInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50794F2282D3D10007DA808 /* SignInViewRouter.swift */; };
+		C50794F9282D3D99007DA808 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50794F8282D3D99007DA808 /* HomeView.swift */; };
+		C50794FB282D3DA8007DA808 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50794FA282D3DA8007DA808 /* HomeViewModel.swift */; };
 		C57E913D27B5E92C00C60C1F /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E913C27B5E92C00C60C1F /* SplashViewModel.swift */; };
 		C57E914327B6A56700C60C1F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E914227B6A56700C60C1F /* SignInView.swift */; };
 		C57E914527B6A5AA00C60C1F /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E914427B6A5AA00C60C1F /* SignInViewModel.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		C50794F0282C3B24007DA808 /* SignInUIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUIState.swift; sourceTree = "<group>"; };
+		C50794F2282D3D10007DA808 /* SignInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewRouter.swift; sourceTree = "<group>"; };
+		C50794F8282D3D99007DA808 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C50794FA282D3DA8007DA808 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C57E913C27B5E92C00C60C1F /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		C57E914227B6A56700C60C1F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		C57E914427B6A5AA00C60C1F /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -52,6 +58,39 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C50794F4282D3D51007DA808 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C50794F5282D3D67007DA808 /* Model */,
+				C50794F6282D3D6E007DA808 /* View */,
+				C50794F7282D3D76007DA808 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C50794F5282D3D67007DA808 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C50794F6282D3D6E007DA808 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C50794F8282D3D99007DA808 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C50794F7282D3D76007DA808 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C50794FA282D3DA8007DA808 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C57E913E27B6A4F200C60C1F /* Signin */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C57E914427B6A5AA00C60C1F /* SignInViewModel.swift */,
+				C50794F2282D3D10007DA808 /* SignInViewRouter.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -97,6 +137,7 @@
 		C5DB48FE27AC3E2400C68EB4 /* Habit */ = {
 			isa = PBXGroup;
 			children = (
+				C50794F4282D3D51007DA808 /* Home */,
 				C57E913E27B6A4F200C60C1F /* Signin */,
 				C5DB490D27AC40B900C68EB4 /* Splash */,
 				C5DB48FF27AC3E2400C68EB4 /* HabitApp.swift */,
@@ -220,8 +261,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5DB491427AC45BE00C68EB4 /* SplashUIState.swift in Sources */,
+				C50794FB282D3DA8007DA808 /* HomeViewModel.swift in Sources */,
 				C5DB490027AC3E2400C68EB4 /* HabitApp.swift in Sources */,
 				C57E914527B6A5AA00C60C1F /* SignInViewModel.swift in Sources */,
+				C50794F9282D3D99007DA808 /* HomeView.swift in Sources */,
+				C50794F3282D3D10007DA808 /* SignInViewRouter.swift in Sources */,
 				C5DB491227AC439D00C68EB4 /* SplashView.swift in Sources */,
 				C57E913D27B5E92C00C60C1F /* SplashViewModel.swift in Sources */,
 				C50794F1282C3B24007DA808 /* SignInUIState.swift in Sources */,
