@@ -37,7 +37,7 @@ struct SignInView: View {
 									.padding(.bottom, 8)
 								
 								emailField
-								
+
 								passwordField
 								
 								enterButton

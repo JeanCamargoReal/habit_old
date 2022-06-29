@@ -54,6 +54,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BF4E81B286B922000580542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BF4E81C286B93B400580542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BF4E81D286B93C000580542 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C50794EF282C3B12007DA808 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,18 +86,11 @@
 		C50794F4282D3D51007DA808 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				C50794F5282D3D67007DA808 /* Model */,
+				7BF4E81B286B922000580542 /* Model */,
 				C50794F6282D3D6E007DA808 /* View */,
 				C50794F7282D3D76007DA808 /* ViewModel */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		C50794F5282D3D67007DA808 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C50794F6282D3D6E007DA808 /* View */ = {
@@ -98,18 +112,11 @@
 		C50794FC282D4919007DA808 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				C50794FF282D4931007DA808 /* Model */,
+				7BF4E81C286B93B400580542 /* Model */,
 				C50794FE282D492B007DA808 /* View */,
-				C50794FD282D4923007DA808 /* ViewController */,
+				7BF4E81D286B93C000580542 /* ViewModel */,
 			);
 			path = SignUp;
-			sourceTree = "<group>";
-		};
-		C50794FD282D4923007DA808 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewController;
 			sourceTree = "<group>";
 		};
 		C50794FE282D492B007DA808 /* View */ = {
@@ -118,13 +125,6 @@
 				C5079500282D4950007DA808 /* SignUpView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C50794FF282D4931007DA808 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C551EDD4282E99B800B6FD26 /* Common */ = {
