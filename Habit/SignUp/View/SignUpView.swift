@@ -16,7 +16,9 @@ struct SignUpView: View {
 	@State var phone = ""
 	@State var birthday = ""
 	@State var gender = Gender.male
-	
+    
+    @ObservedObject var viewModel: SignUpViewModel
+    
 	var body: some View {
 		ZStack {
 			ScrollView(showsIndicators: false) {
@@ -37,6 +39,17 @@ struct SignUpView: View {
 					Spacer()
 				}.padding(.horizontal, 8)
 			}.padding(20)
+            
+            if case SignUpUIState.error(let value) = viewModel.uiState {
+                Text("")
+                    .alert(isPresented: .constant(true)) {
+                        Alert(
+                            title: Text("Habit"),
+                            message: Text(value),
+                            dismissButton: .default(Text("OK"))
+                        )
+                    }
+            }
 		}
 	}
 }
@@ -100,13 +113,13 @@ extension SignUpView {
 extension SignUpView {
 	var saveButton: some View {
 		Button("Realize o seu Cadastro") {
-			// viewModel.???
+            viewModel.signUp()
 		}
 	}
 }
 
 struct SignUpView_Previews: PreviewProvider {
 	static var previews: some View {
-		SignUpView()
+		SignUpView(viewModel: SignUpViewModel())
 	}
 }
